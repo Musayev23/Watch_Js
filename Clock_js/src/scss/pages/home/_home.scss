@@ -1,0 +1,50 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+#product{
+    .container{
+        max-width: 1400px;
+        margin: auto;
+        .cards{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            .card{
+            border: 4px dotted #555556;
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            animation: clocked 3s linear infinite;
+            box-shadow: 0px 12px 44px 0px rgba(0, 0, 0, 0.10);
+            .clock{
+                font-size: 45px;
+                font-weight: 700;
+                font-size: 50px;
+                background: -webkit-linear-gradient(#eee, #333);
+                -webkit-text-fill-color: transparent;
+                -webkit-background-clip: text;
+            }
+            }
+            }
+            @keyframes clocked {
+                0%{
+                    transform: translateY(0deg);
+
+                }
+                50%{
+                    transform: translateY(1800deg);
+                    border: 5px dotted #535454
+                }
+                100%{
+                    transform: translateY(360deg);
+                    border: 6px dotted #434343
+                }
+            }
+        }
+    }
